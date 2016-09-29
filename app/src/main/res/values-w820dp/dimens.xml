@@ -1,0 +1,28 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="main_icon_size">150dp</dimen>
+    <dimen name="titlebar_height">96dp</dimen>
+    <dimen name="avator_thumb_width_small">72dp</dimen>
+    <dimen name="activity_horizontal_margin">32dp</dimen>
+    <!--2倍 -->
+    <dimen name="margin_30">60dp</dimen>
+    <dimen name="margin_24">48dp</dimen>
+    <dimen name="margin_23">46dp</dimen>
+    <dimen name="margin_16">32dp</dimen>
+    <dimen name="margin_12">24dp</dimen>
+    <dimen name="margin_8">16dp</dimen>
+    <dimen name="margin_5">10dp</dimen>
+    <dimen name="margin_3">6dp</dimen>
+    <dimen name="split_height_1">2dp</dimen>
+    <dimen name="divider_height">2dp</dimen>
+    <!-- 字大小 -->
+    <dimen name="list_best_level">24sp</dimen>
+    <dimen name="list_first_level">18sp</dimen>
+    <dimen name="list_second_level">16sp</dimen>
+    <dimen name="list_third_level">14sp</dimen>
+    <dimen name="list_min_level">12sp</dimen>
+    <!-- 头像-mimi -->
+    <dimen name="avator_thumb_width_mini">32dp</dimen>
+</resources>

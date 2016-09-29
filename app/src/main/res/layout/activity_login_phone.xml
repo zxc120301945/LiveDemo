@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_free_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <!-- 标题栏 -->
+
+    <include layout="@layout/view_titlebar_back" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_8"
+        android:src="@drawable/login_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24"
+        android:background="@color/main_bg_color"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_8"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16"
+        android:paddingTop="@dimen/margin_8">
+
+        <LinearLayout
+            android:id="@+id/ll_phone_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/login_et_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:clickable="true"
+                android:hint="@string/phone_hint"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:padding="@dimen/margin_8"
+                android:textColor="#2E3D49"
+                android:textSize="@dimen/list_third_level" />
+
+            <TextView
+                android:id="@+id/login_btn_valid_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:background="@drawable/common_btn_bg_light_green_rectangle_selector"
+                android:clickable="true"
+                android:text="@string/login_valid_code"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/list_third_level" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/division_line_phone_one"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="#E6E6E6"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_valid_code_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/login_et_valid_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/valid_code_hint"
+                android:inputType="number"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:padding="@dimen/margin_8"
+                android:textColor="#2E3D49"
+                android:textSize="@dimen/list_third_level" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/division_line_phone_two"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="#E6E6E6"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_enter_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@drawable/common_et_bg_rectangle_selector"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/login_et_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/login_enter_password_please"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:padding="@dimen/margin_8"
+                android:textColor="#2E3D49"
+                android:textSize="@dimen/list_third_level" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_prompt_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_8"
+        android:text="@string/password_remind"
+        android:textColor="#A1A1A1"
+        android:textSize="@dimen/list_min_level" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        android:background="@drawable/common_btn_bg_sky_blue_rectangle_selector"
+        android:clickable="true"
+        android:onClick="onClickLogin"
+        android:padding="@dimen/margin_8"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/list_first_level" />
+
+</LinearLayout>

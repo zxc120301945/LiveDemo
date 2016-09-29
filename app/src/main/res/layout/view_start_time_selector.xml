@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_sratr_live_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_picker_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/trailer_add_time_picker_bg">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:onClick="onClickStartLive"
+            android:padding="10dp"
+            android:text="立即直播"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/margin_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="直播开始时间"
+            android:visibility="gone"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/margin_16" />
+
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_16"
+            android:background="@null"
+            android:onClick="onClickStartLiveDateComplete"
+            android:padding="10dp"
+            android:text="完成"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/margin_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/bt_ok"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16"
+            android:background="@color/trailer_add_time_divider" />
+    </RelativeLayout>
+
+</RelativeLayout>

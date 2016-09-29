@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 跳过 -->
+
+    <Button
+        android:id="@+id/user_guide_btn_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/viewpager"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#ff0000"
+        android:minWidth="240dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:text="跳转"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/list_first_level"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/user_guide_ll_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/viewpager"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_8">
+
+        <ImageView
+            android:id="@+id/user_guide_iv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_launcher"
+            android:minHeight="@dimen/margin_8"
+            android:minWidth="@dimen/margin_8" />
+
+        <ImageView
+            android:id="@+id/user_guide_iv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="#0000ff"
+            android:minHeight="@dimen/margin_8"
+            android:minWidth="@dimen/margin_8" />
+
+        <ImageView
+            android:id="@+id/user_guide_iv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="#00ff00"
+            android:minHeight="@dimen/margin_8"
+            android:minWidth="@dimen/margin_8"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

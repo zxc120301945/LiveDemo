@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_live_length_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/trailer_add_time_picker_bg">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="立即直播"
+            android:clickable="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/margin_16"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="直播开始时间"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/margin_16"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bt_Live_Length_Complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_16"
+            android:background="@null"
+            android:clickable="true"
+            android:onClick="onClickLiveLengthComplete"
+            android:padding="10dp"
+            android:text="完成"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/margin_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/bt_Live_Length_Complete"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16"
+            android:background="@color/trailer_add_time_divider" />
+    </RelativeLayout>
+
+    <com.you.edu.live.teacher.view.picker.LiveLengthSelectorDatePicker
+        android:id="@+id/picker_mins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_live_length_root"
+        android:background="@color/trailer_add_time_picker_bg"
+        android:clickable="false"
+        android:focusable="false" />
+
+</RelativeLayout>

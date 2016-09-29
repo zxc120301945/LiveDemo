@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="main_icon_size">75dp</dimen>
+    <dimen name="titlebar_height">48dp</dimen>
+    <dimen name="avator_thumb_width_small">36dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_23">23dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="split_height_1">1dp</dimen>
+    <!-- 弧形按钮角度 -->
+    <dimen name="arc_radius">36dp</dimen>
+    <dimen name="divider_height">0.5dp</dimen>
+    <!-- 字大小 -->
+    <dimen name="list_best_level">22sp</dimen>
+    <dimen name="list_first_level">16sp</dimen>
+    <dimen name="list_second_level">14sp</dimen>
+    <dimen name="list_third_level">12sp</dimen>
+    <dimen name="list_min_level">10sp</dimen>
+    <!-- 头像-mimi -->
+    <dimen name="avator_thumb_width_mini">36dp</dimen>
+</resources>

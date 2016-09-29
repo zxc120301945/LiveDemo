@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_text_bg_selector"
+    android:clickable="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_8"
+        android:paddingLeft="@dimen/margin_8"
+        android:paddingRight="@dimen/margin_8"
+        android:paddingTop="@dimen/margin_8">
+
+
+        <ImageView
+            android:id="@+id/course_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_toRightOf="@+id/course_cover"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="课程名称"
+            android:textColor="@color/common_tv_color_best"
+            android:textSize="@dimen/list_first_level" />
+
+        <TextView
+            android:id="@+id/tv_course_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_course_name"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_toRightOf="@+id/course_cover"
+            android:text="课时数量"
+            android:textColor="@color/tv_color_gray"
+            android:textSize="@dimen/list_second_level" />
+
+        <TextView
+            android:id="@+id/tv_live_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_course_name"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/course_cover"
+            android:text="播放状态"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/list_third_level" />
+    </RelativeLayout>
+</RelativeLayout>

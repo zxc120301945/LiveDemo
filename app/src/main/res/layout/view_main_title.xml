@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/alltranslucent">
+
+    <TextView
+        android:id="@+id/user_unlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/common_et_bg_alltranslucent_rectangle_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_3"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16"
+        android:paddingTop="@dimen/margin_3"
+        android:text="登出"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/list_second_level" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_unlogin">
+
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="@dimen/main_icon_size"
+            android:layout_height="@dimen/main_icon_size"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/user_avator" />
+
+        <TextView
+            android:id="@+id/user_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/user_icon"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_toRightOf="@+id/user_icon"
+            android:text="用户昵称"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/list_first_level" />
+
+        <TextView
+            android:id="@+id/course_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_toRightOf="@+id/user_icon"
+            android:text="发布课程"
+            android:textColor="@color/tv_color_light_blue"
+            android:textSize="@dimen/list_third_level" />
+
+        <TextView
+            android:id="@+id/form_you_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/user_icon"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_toRightOf="@+id/user_icon"
+            android:paddingTop="@dimen/margin_3"
+            android:text="优酷学堂"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/list_second_level" />
+    </RelativeLayout>
+</RelativeLayout>

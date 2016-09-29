@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lfapp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:keepScreenOn="true"
+    tools:context="com.you.edu.live.teacher.view.activity.LivePostActivity">
+    <!--直播view -->
+    <com.laifeng.sopcastsdk.LFLiveView
+        android:id="@+id/live_post_lfliveview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        lfapp:aspect_ratio="1.7778" />
+
+    <!-- 直播初始化加载中 -->
+    <RelativeLayout
+        android:id="@+id/live_post_rl_init_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/view_loading_part"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+        <!-- 手势提示 -->
+        <ImageView
+            android:id="@+id/live_post_iv_slide_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/margin_16"
+            android:src="@drawable/live_slide_icon" />
+    </RelativeLayout>
+    <!-- 直播views -->
+    <RelativeLayout
+        android:id="@+id/live_post_rl_views"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- 观看人数  -->
+
+        <TextView
+            android:id="@+id/live_post_tv_user_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:drawableLeft="@drawable/live_avator"
+            android:drawablePadding="@dimen/margin_3"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:gravity="center"
+            android:padding="@dimen/margin_8"
+            android:text="@string/zero"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/list_first_level" />
+        <!-- 用户头像列表  -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/live_post_rv_users"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/live_post_tv_good_count"
+            android:layout_below="@+id/live_post_tv_user_count"
+            android:layout_marginLeft="@dimen/margin_8">
+
+        </android.support.v7.widget.RecyclerView>
+        <!-- 点赞数  -->
+
+        <TextView
+            android:id="@+id/live_post_tv_good_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:drawableLeft="@drawable/live_heart"
+            android:drawablePadding="@dimen/margin_3"
+            android:gravity="center"
+            android:padding="@dimen/margin_8"
+            android:text="@string/zero"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/list_first_level" />
+
+        <!-- 右上角按钮群-->
+        <LinearLayout
+            android:id="@+id/live_post_ll_right_top_btns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_8"
+            android:orientation="horizontal">
+            <!-- 前后置摄像头切换 -->
+            <ImageView
+                android:id="@+id/live_post_iv_camera_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_8"
+                android:src="@drawable/live_camera_selector" />
+            <!-- 闪光灯切换 -->
+            <ImageView
+                android:id="@+id/live_post_iv_light_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:padding="@dimen/margin_8"
+                android:src="@drawable/live_flash_open_selector" />
+
+            <!-- 停止直播 -->
+            <TextView
+                android:id="@+id/live_post_tv_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:drawableLeft="@drawable/live_stop_icon"
+                android:drawablePadding="@dimen/margin_8"
+                android:background="@drawable/common_et_bg_alltranslucent_rectangle_selector"
+                android:gravity="center_vertical"
+                android:text="@string/live_stop"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/list_first_level" />
+        </LinearLayout>
+
+        <!-- 评论列表-属性设置见代码 -->
+        <LinearLayout
+            android:id="@+id/live_post_ll_messages"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/live_post_ll_right_top_btns"
+            android:layout_margin="@dimen/margin_8"
+            android:gravity="bottom|right"
+            android:orientation="vertical"></LinearLayout>
+        <!-- 直播中间-试播view、缓冲中、直播出错 -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <!--  试播view  -->
+            <RelativeLayout
+                android:id="@+id/live_post_rl_pilot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/live_post_tv_pilot_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/live_pilot_ing"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/list_best_level" />
+
+                <TextView
+                    android:id="@+id/live_post_tv_start_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/live_post_tv_pilot_tips"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:background="@drawable/common_btn_bg_arc_blue_selector"
+                    android:text="@string/live_start"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/list_first_level" />
+            </RelativeLayout>
+            <!--  播放出错  -->
+            <RelativeLayout
+                android:id="@+id/live_post_rl_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/live_post_tv_play_error_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/live_play_error_tips"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/list_first_level" />
+
+                <TextView
+                    android:id="@+id/live_post_tv_play_retry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/live_post_tv_play_error_tips"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:background="@drawable/common_btn_bg_arc_blue_selector"
+                    android:text="@string/live_play_retry"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/list_first_level" />
+            </RelativeLayout>
+            <!-- 视频缓冲中 -->
+            <ProgressBar
+                android:id="@+id/live_post_probar_buffering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/progressbar_drawable"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

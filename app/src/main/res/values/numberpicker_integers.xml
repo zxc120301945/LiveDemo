@@ -1,0 +1,6 @@
+<resources>
+
+    <integer name="np_config_longAnimTime">500</integer>
+    <integer name="loading_duration">30</integer>
+
+</resources>

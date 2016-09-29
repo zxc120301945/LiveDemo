@@ -1,0 +1,14 @@
+<com.you.edu.live.teacher.view.custom.danmu.MessageDanmu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/live_comment_item_bg"
+    android:gravity="bottom"
+    android:onClick="onClickCommentsItem"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_8"
+    android:textColor="@android:color/white"
+    android:textSize="@dimen/list_third_level" >
+
+</com.you.edu.live.teacher.view.custom.danmu.MessageDanmu>

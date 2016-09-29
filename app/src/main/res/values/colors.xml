@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 半透明 -->
+    <color name="translucent">#b0000000</color>
+    <!-- 全透明 -->
+    <color name="alltranslucent">#00000000</color>
+    <color name="colorPrimary">#2E3D49</color>
+    <color name="colorPrimaryDark">#163D5C</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="main_bg_color">#ffffff</color>
+    <color name="main_color">#02B3E4</color>
+    <color name="common_btn_color_normal">#21BDE8</color>
+    <color name="common_btn_color_selected">#1DA0C4</color>
+    <color name="common_btn_color_normal_red">#DE6164</color>
+    <color name="common_btn_color_selected_red">#C54447</color>
+    <color name="common_disable_color_normal">#AEAEAE</color>
+    <color name="common_disable_color_selected">#838383</color>
+    <!-- App通用Text颜色 -特级 -->
+    <color name="common_tv_color_best">#263D5C</color>
+    <!-- App通用Text颜色-一级 -->
+    <color name="common_tv_color_first">#343434</color>
+    <!-- App通用Text颜色-一级-已读 -->
+    <color name="common_tv_color_first_read">#93B7C3</color>
+    <!-- App通用Text颜色-二级 -->
+    <color name="common_tv_color_second">#343434</color>
+    <!-- App通用Text颜色-三级 -->
+    <color name="common_tv_color_third">#A2A2A2</color>
+    <!-- App通用TextView式样Button-平常颜色 -->
+    <color name="common_tv_btn_color_normal">@color/alltranslucent</color>
+    <!-- 深蓝背景按下颜色 -->
+    <color name="deep_blue_press_color_bg">@color/colorPrimary</color>
+    <!-- App通用TextView式样Button-点击颜色 -->
+    <color name="common_tv_btn_color_selected">#d9d9d9</color>
+    <!-- 首页红色文字 -->
+    <color name="main_tv_color_red">#DE6164</color>
+    <!-- 首页深黑文字 -->
+    <color name="main_tv_color_black">#333333</color>
+    <!-- 灰色文字 -->
+    <color name="tv_color_gray">#9C9C9C</color>
+    <!-- 淡蓝文字 -->
+    <color name="tv_color_light_blue">#A1AFBB</color>
+    <!-- 蓝色文字 -->
+    <color name="tv_color_blue">#2EBDE8</color>
+    <!-- 深蓝文字 -->
+    <color name="tv_color_deep_blue">@color/colorPrimary</color>
+    <!-- 红色按钮按下颜色 -->
+    <color name="btn_press_color_red">#936157</color>
+    <!-- 蓝色按钮 -->
+    <color name="btn_color_sky_blue">#DFF8FF</color>
+    <!-- 蓝色按钮按下颜色 -->
+    <color name="btn_press_color_blue">#DFFCFF</color>
+    <!-- 首页title渐变颜色 -->
+    <color name="status_bar_start_bg">#0D253E</color>
+    <!-- 首页title渐变颜色 -->
+    <color name="status_bar_end_bg">#163D5C</color>
+    <!-- 灰色按钮颜色 -->
+    <color name="btn_color_gray">#E3E3E3</color>
+    <!-- 按钮按下灰色颜色 -->
+    <color name="btn_press_color_gray">#F9F9F9</color>
+    <!-- 天蓝色按钮按下颜色 -->
+    <color name="btn_press_color_sky_blue">#018FB6</color>
+    <!-- 分割线颜色 -->
+    <color name="spilt_color_bg">#E6E6E6</color>
+    <!-- 登录EditText默认文字颜色 -->
+    <color name="login_et_hint_color">#a9a9a9</color>
+    <!-- 不建议样式button的背景颜色 -->
+    <color name="btn_no_recommended_normal">#d2d2d2</color>
+    <!-- 不建议样式button的点击时背景颜色 -->
+    <color name="btn_no_recommended_selected">#aaaaaa</color>
+    <!-- App提示性文字颜色 -->
+    <color name="tips_color">#3f3f3f</color>
+    <!-- 预告添加时间选择器背景 -->
+    <color name="trailer_add_time_picker_bg">#eceded</color>
+    <!-- 预告添加时间选择器分割线 -->
+    <color name="trailer_add_time_divider">#d7d7d7</color>
+    <!-- 直播用户名颜色 -->
+    <color name="live_username_tv_color">#B7B7B7</color>
+    <!-- 下载状态文本颜色 -->
+    <color name="download_state_progress_color">#858585</color>
+
+</resources>

@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme_portrait" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- <item name="android:background">#F8F8FF</item> -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 设置activity切换动画 -->
+        <item name="android:windowAnimationStyle">@style/activityAnimation_portrait</item>
+    </style>
+    <!-- animation 样式 -->
+    <style name="activityAnimation_portrait" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_from_bottom</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_to_bottom</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_none</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_none</item>
+    </style>
+
+    <!-- ProgressDialog style -->
+    <style name="dialog_progress_style">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 是否模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 倒计时时间-普通style -->
+    <style name="course_count_down_time_normal">
+        <item name="android:textSize">@dimen/list_second_level</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <!-- 倒计时时间-高亮style -->
+    <style name="course_count_down_time_bright">
+        <item name="android:textSize">@dimen/list_best_level</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 半透明的dialg style -->
+    <style name="dialog_style">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowContentOverlay">@color/translucent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+
+    </style>
+
+    <!-- 默认漂浮PopWindow动画-从下倒上 -->
+    <style name="floating_anim_style">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+    </style>
+    <!-- 全部课程漂浮PopWindow动画-从上到下 -->
+    <style name="course_all_floating_anim_style">
+        <item name="android:windowEnterAnimation">@anim/course_all_popupwindow_enter</item>
+        <item name="android:windowExitAnimation">@anim/course_all_popupwindow_out</item>
+    </style>
+
+</resources>

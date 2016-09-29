@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 数据加载中 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/progress_bar_loading"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" 
+    android:background="@color/main_bg_color">
+
+    <ProgressBar
+        android:id="@+id/loading_probar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/progressbar_drawable" />
+
+    <!-- 加载中动画View -->
+
+    <ImageView
+        android:id="@+id/loading_iv_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/loading_tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="@string/loading_tip"
+        android:textColor="@color/common_tv_color_first"
+        android:textSize="@dimen/list_first_level" />
+
+    <!-- 点击重试 -->
+
+    <LinearLayout
+        android:id="@+id/loading_ll_no_network"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg_color"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_launcher"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/loading_tv_retry_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:text="@string/request_fail"
+            android:textColor="@color/tips_color"
+            android:textSize="@dimen/list_second_level" />
+
+        <TextView
+            android:id="@+id/loading_tv_retry_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:text="@string/no_network_retry_click"
+            android:textColor="@color/tips_color"
+            android:textSize="@dimen/list_third_level" />
+    </LinearLayout>
+
+</LinearLayout>

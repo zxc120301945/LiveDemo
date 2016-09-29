@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_16" >
+
+    <!-- 提示语 -->
+
+    <TextView
+        android:id="@+id/dialog_app_upgrade_tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_horizontal"
+        android:layout_marginBottom="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        android:textColor="@color/tips_color"
+        android:textSize="@dimen/list_first_level" />
+
+    <LinearLayout
+        android:id="@+id/dialog_app_upgrade_ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dialog_app_upgrade_tv_msg"
+        android:layout_marginTop="@dimen/margin_16" >
+
+        <!-- 取消 -->
+
+        <Button
+            android:id="@+id/dialog_app_upgrade_btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/common_btn_bg_rectangle_selector_no_recommended"
+            android:clickable="true"
+            android:onClick="onClickUpgradeCancel"
+            android:text="@string/cancel"
+             android:layout_marginRight="@dimen/margin_16"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/list_first_level" 
+           />
+        <!-- 更新 -->
+
+        <Button
+            android:id="@+id/dialog_app_upgrade_btn_upgrade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/common_btn_bg_rectangle_selector"
+            android:onClick="onClickUpgrade"
+            android:text="@string/upgrade"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/list_first_level" />
+    </LinearLayout>
+
+</RelativeLayout>

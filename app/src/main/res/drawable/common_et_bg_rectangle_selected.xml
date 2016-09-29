@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <!-- 实心 -->
+    <solid android:color="@color/main_bg_color" >
+    </solid>
+
+    <corners android:radius="@dimen/margin_3" />
+
+    <!-- 边框 -->
+    <stroke
+        android:width="1dp"
+        android:color="#02B3E4" />
+
+    <!-- 矩形的内部颜色，这里设置成白色，即空心 -->
+    <!--
+         <gradient
+        android:endColor="#fff"
+        android:startColor="#fff" />
+
+
+    -->
+
+    <padding
+        android:bottom="@dimen/margin_8"
+        android:left="@dimen/margin_8"
+        android:right="@dimen/margin_8"
+        android:top="@dimen/margin_8" />
+
+</shape>

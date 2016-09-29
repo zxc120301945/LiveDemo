@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alltranslucent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pw_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_all_class_hour_root"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:onClick="onClickallClassHour"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_8"
+                android:paddingRight="@dimen/margin_5">
+
+                <TextView
+                    android:id="@+id/tv_all_class_hour_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:text="@string/all_class_hour"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/list_first_level" />
+
+                <ImageView
+                    android:id="@+id/iv_all_class_hour_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_3"
+                    android:src="@drawable/check_mark"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/split_line_four"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/ll_all_class_hour_root"
+                android:layout_alignRight="@+id/ll_all_class_hour_root"
+                android:layout_below="@+id/ll_all_class_hour_root"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@color/btn_color_gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_live_class_hour_root"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/split_line_four"
+                android:clickable="true"
+                android:onClick="onClickLiveClassHour"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_8"
+                android:paddingRight="@dimen/margin_5">
+
+                <TextView
+                    android:id="@+id/tv_live_class_hour_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:text="@string/live_class_hour"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/list_first_level" />
+
+                <ImageView
+                    android:id="@+id/iv_live_class_hour_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_3"
+                    android:src="@drawable/check_mark"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

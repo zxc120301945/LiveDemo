@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_chapter_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_text_bg_selector"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16">
+
+        <RelativeLayout
+            android:id="@+id/rl_hour_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_course_hour_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_toLeftOf="@+id/tv_live_classroom"
+                android:singleLine="true"
+                android:text="课时名称"
+                android:textColor="@color/common_tv_color_best"
+                android:textSize="@dimen/list_first_level" />
+
+            <TextView
+                android:id="@+id/tv_live_classroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tv_course_hour_name"
+                android:background="@drawable/common_btn_bg_light_red_rectangle_selector"
+                android:text="直播教室"
+                android:textColor="@color/tv_color_deep_blue"
+                android:textSize="@dimen/list_third_level" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_live_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rl_hour_des"
+            android:layout_alignRight="@+id/rl_hour_des"
+            android:layout_below="@+id/rl_hour_des"
+            android:layout_marginTop="@dimen/margin_8"
+            android:maxLines="2"
+            android:text="直播时间"
+            android:textColor="@color/main_tv_color_red"
+            android:textSize="@dimen/list_second_level" />
+
+        <TextView
+            android:id="@+id/tv_hour_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rl_hour_des"
+            android:layout_alignRight="@+id/rl_hour_des"
+            android:layout_below="@+id/tv_live_time"
+            android:layout_marginTop="@dimen/margin_8"
+            android:paddingBottom="@dimen/margin_8"
+            android:text="课程名称"
+            android:textColor="@color/main_tv_color_black"
+            android:textSize="@dimen/list_third_level" />
+    </RelativeLayout>
+</RelativeLayout>

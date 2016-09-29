@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/alltranslucent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/margin_8"
+    android:paddingTop="@dimen/margin_8" >
+
+    <!-- 加载中 -->
+
+    <LinearLayout
+        android:id="@+id/item_footer_ll_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:id="@+id/item_footer_progress"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/progressbar_drawable"
+            android:padding="@dimen/margin_8" />
+
+        <TextView
+            android:id="@+id/item_footer_tv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/margin_8"
+            android:text="@string/loading_tip"
+            android:textColor="@color/common_tv_color_first"
+            android:textSize="@dimen/list_second_level" />
+    </LinearLayout>
+
+    <!-- 没有更多 -->
+
+    <TextView
+        android:id="@+id/item_footer_tv_no_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/no_more_data_tips"
+        android:textColor="@color/common_tv_color_first"
+        android:textSize="@dimen/list_second_level"
+        android:visibility="gone" />
+
+    <!-- 没有网络 -->
+
+    <TextView
+        android:id="@+id/item_footer_tv_no_network"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/no_network"
+        android:textColor="@color/common_tv_color_first"
+        android:textSize="@dimen/list_second_level"
+        android:visibility="gone" />
+
+</LinearLayout>
